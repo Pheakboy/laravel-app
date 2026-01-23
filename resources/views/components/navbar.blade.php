@@ -2,11 +2,11 @@
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8" aria-label="Primary">
         <!-- Logo -->
         <a href="{{ route('home') }}" class="flex items-center gap-2 font-semibold text-gray-900 hover:text-gray-700 transition-colors">
-            <span class="text-xl">{{ config('app.name', 'Chirper') }}</span>
+             <img src="./Shop_Logo.png" alt="Shop Logo" class="h-14 w-14 object-contain">
         </a>
 
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center gap-2">
+        <div class="hidden md:flex justify-center gap-2">
             <a
                 href="{{ route('chirps.index') }}"
                 @class([
@@ -17,6 +17,7 @@
             >
                 All Chirps
             </a>
+            
 
             @auth
                 <a
